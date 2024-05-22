@@ -13,6 +13,12 @@
     </form>
 </div>
 
+<?php
+    if (count($citas) === 0) {
+        echo '<h2>No hay Citas Registradas para el día de hoy</h2>';
+    }
+?>
+
 <div id="citas-admin">
     <ul class="citas">
         <?php
@@ -38,10 +44,14 @@
             $proximo = $citas[$key+ 1]->id ?? 0;
             if (ultimo($actual, $proximo)) { ?>
                <p class="total">Total: <span>$<?php echo $total;?></span></p>
+                <form action="/api/eliminar" method="POST" id="formEliminar" >
+                    <input type="hidden" name="id" value="<?php echo $cita->id; ?>">
+                    <input type="submit" class="btn-eliminar" value="Eliminar" onclick="confirmDelete(event)">
+                </form> 
             <?php } } //Fin ForEach?>
     </ul>
 </div>
 
 <?php
-    $script = "<script src='build/js/buscador.js'></script>"
+    $script = "<script src='build/js/buscador.js'></script> <script src='//cdn.jsdelivr.net/npm/sweetalert2@10'></script>"
 ?>
