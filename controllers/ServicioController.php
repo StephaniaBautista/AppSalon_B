@@ -63,9 +63,11 @@ class ServicioController {
         ]);
     }
 
-    public static function eliminar(Router $router) {
-        if ($_SERVER['REQUEST_METHOD'] === "POST") {
-            # code...
+    public static function eliminar() {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $cita = Servicio::find_id($_POST['id']);
+            $cita->eliminar();
+            header('Location:' . $_SERVER['HTTP_REFERER']);
         }
     }
 }
