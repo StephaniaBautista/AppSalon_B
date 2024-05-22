@@ -17,3 +17,15 @@
     }
   }
 }
+
+.servicios {
+  @extend .citas;
+
+  .acciones {
+    margin: 0;
+  }
+  .btn-azul,
+  .btn-eliminar {
+    margin: 0 0 1rem 0;
+  }
+}
