@@ -1,0 +1,52 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.dark-mode-boton {
+  margin-top: 2rem;
+  width: 3rem;
+  filter: invert(100%);
+  &:hover {
+    cursor: pointer;
+  }
+  @include m.tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.dark-mode {
+  background-color: v.$blanco;
+  color: v.$negro !important ;
+  p,
+  h1,
+  h2,
+  h3,
+  li span,
+  span,
+  label,
+  .campo label {
+    color: v.$negro;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"] {
+    background-color: lighten(v.$gris, 7%);
+  }
+  .dark-mode-boton {
+    filter: invert(0%);
+  }
+  li {
+    border-color: v.$negro;
+  }
+  .campo input:disabled {
+    color: v.$negro;
+  }
+  .servicio {
+    background-color: v.$negro;
+    p {
+      color: v.$blanco;
+    }
+  }
+}

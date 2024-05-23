@@ -53,5 +53,8 @@
 </div>
 
 <?php
-    $script = "<script src='build/js/buscador.js'></script> <script src='//cdn.jsdelivr.net/npm/sweetalert2@10'></script>"
-?>
+    $script = "
+    <script src='build/js/buscador.js'></script> 
+    <script src='build/js/darkmode.js'></script> 
+    <script src='//cdn.jsdelivr.net/npm/sweetalert2@10'></script>"
+?>  

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   iniciarApp();
 });
 
-function iniciarApp() {
+function iniciarApp() { 
   seleccionarFecha();
   confirmDelete();
 }

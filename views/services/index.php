@@ -17,3 +17,8 @@
         </li>
     <?php endforeach ?>
 </ul>
+
+<?php 
+    $script = "
+    <script src='/build/js/darkmode.js'></script>"
+?>

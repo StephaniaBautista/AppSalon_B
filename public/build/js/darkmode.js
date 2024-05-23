@@ -1,0 +1,1 @@
+function darkMode(){document.querySelector(".dark-mode-boton").addEventListener("click",(function(){document.body.classList.toggle("dark-mode")}))}darkMode();

@@ -8,3 +8,8 @@
 
     <input type="submit" class="btn-azul" value="Actualizar Servicio">
 </form>
+
+<?php 
+    $script = "
+    <script src='/build/js/darkmode.js'></script>"
+?>

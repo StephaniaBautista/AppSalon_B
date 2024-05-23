@@ -1,6 +1,7 @@
 <div class="barra">
     <p>Hola: <?php echo $nombre ?? ''?> </p>
     <a href="/logout" class="btn-azul">Cerrar Sesión</a>
+    <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
 </div>
 
 <?php if(isset($_SESSION['admin'])){ ?>
