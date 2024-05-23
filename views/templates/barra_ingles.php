@@ -1,7 +1,7 @@
 <div class="barra">
-    <p>Hola: <?php echo $nombre ?? ''?> </p>
-    <a href="/logout" class="btn-azul">Cerrar Sesión</a>
-    <a href="/inicio-ingles" class="btn-verde">Cambiar Lenguaje</a>
+    <p>Hello: <?php echo $nombre ?? ''?> </p>
+    <a href="/logout" class="btn-azul">Logout</a>
+    <a href="/cita" class="btn-verde">Change Lenguage</a>
     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
 </div>
 

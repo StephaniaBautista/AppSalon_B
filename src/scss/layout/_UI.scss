@@ -42,6 +42,10 @@
     @include m.boton(v.$negro, v.$blanco);
     margin: 0;
   }
+  .btn-verde {
+    @include m.boton(v.$verde, v.$blanco);
+    margin: 0;
+  }
 }
 
 .barra-servicios {

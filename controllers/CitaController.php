@@ -13,4 +13,12 @@ class CitaController {
             'id' => $_SESSION['id']
         ]);
     }
+    public static function index_ingles(Router $router) {
+        session_start();
+        isAuth();
+        $router->render('cita/index_ingles', [
+            'nombre'=> $_SESSION['nombre'],
+            'id' => $_SESSION['id']
+        ]);
+    }
 }

@@ -52,6 +52,9 @@ $router->post('/servicios/actualizar', [ServicioController::class, 'actualizar']
 ;
 $router->post('/servicios/eliminar', [ServicioController::class, 'eliminar']);
 
+//Inicio Ingles
+$router->get('/inicio-ingles', [CitaController::class, 'index_ingles']);
+$router->get('/admin', [AdminController::class, 'index']);
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
