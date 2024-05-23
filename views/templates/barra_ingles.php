@@ -5,6 +5,12 @@
     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
 </div>
 
+<div class="barra">
+    <p class="aumento-size">A+</p>
+    <p class="disminuye-size">A-</p>
+    <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
+</div>
+
 <?php if(isset($_SESSION['admin'])){ ?>
     <div class="barra-servicios">
         <a href="/admin" class="btn-azul">Ver Citas</a>

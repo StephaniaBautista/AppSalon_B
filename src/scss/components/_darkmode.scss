@@ -44,9 +44,45 @@
     color: v.$negro;
   }
   .servicio {
-    background-color: v.$negro;
+    background-color: darken(v.$gris, 20%);
     p {
       color: v.$blanco;
     }
+  }
+}
+
+.aumento-size,
+.disminuye-size {
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.aumenta {
+  font-size: 3rem;
+  p,
+  li span,
+  span,
+  label {
+    font-size: 3rem;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 5rem;
+  }
+}
+
+.disminuye {
+  font-size: 1.2rem;
+  p,
+  li span,
+  span,
+  label {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 2rem;
   }
 }
